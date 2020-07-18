@@ -5,13 +5,13 @@
   align-items: center;
   border: medium dashed lightgray;
   height: 100vh;
-  background: hsl(0, 3%, 79%, 0.9);
+  background: white;
   border-radius: 0px 20px 20px 0px;
 }
 
 .contact-wrapper h3 {
   text-align: center;
-  color: #db0000;
+  color: #22b77e;
 }
 
 .contact-form {
