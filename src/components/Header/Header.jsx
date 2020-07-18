@@ -37,7 +37,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobileOpen: false
+      mobileOpen: false,
     };
   }
   handleDrawerToggle = () => {
@@ -80,48 +80,48 @@ class Header extends React.Component {
       leftLinks,
       brand,
       fixed,
-      absolute
+      absolute,
     } = this.props;
     const appBarClasses = classNames({
       [classes.appBar]: true,
       [classes[color]]: color,
       [classes.absolute]: absolute,
-      [classes.fixed]: fixed
+      [classes.fixed]: fixed,
     });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
+    const brandComponent = <div className={classes.title}>{brand}</div>;
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
           {leftLinks !== undefined ? brandComponent : null}
           <div className={classes.flex}>
             {leftLinks !== undefined ? (
-              <Hidden smDown implementation="css">
+              <Hidden smDown implementation='css'>
                 {leftLinks}
               </Hidden>
             ) : (
               brandComponent
             )}
           </div>
-          <Hidden smDown implementation="css">
+          <Hidden smDown implementation='css'>
             {rightLinks}
           </Hidden>
           <Hidden mdUp>
             <IconButton
-              color="inherit"
-              aria-label="open drawer"
+              color='inherit'
+              aria-label='open drawer'
               onClick={this.handleDrawerToggle}
             >
               <Menu />
             </IconButton>
           </Hidden>
         </Toolbar>
-        <Hidden mdUp implementation="js">
+        <Hidden mdUp implementation='js'>
           <Drawer
-            variant="temporary"
+            variant='temporary'
             anchor={"right"}
             open={this.state.mobileOpen}
             classes={{
-              paper: classes.drawerPaper
+              paper: classes.drawerPaper,
             }}
             onClose={this.handleDrawerToggle}
           >
@@ -137,7 +137,7 @@ class Header extends React.Component {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "white",
 };
 
 Header.propTypes = {
@@ -151,7 +151,7 @@ Header.propTypes = {
     "transparent",
     "white",
     "rose",
-    "dark"
+    "dark",
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
@@ -175,9 +175,9 @@ Header.propTypes = {
       "transparent",
       "white",
       "rose",
-      "dark"
-    ]).isRequired
-  })
+      "dark",
+    ]).isRequired,
+  }),
 };
 
 export default withStyles(headerStyle)(Header);

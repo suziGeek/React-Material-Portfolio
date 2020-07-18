@@ -63,12 +63,36 @@ button {
   outline: none;
   border: none;
   border-radius: 5px;
-  background: #db0000;
+
   color: white;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s ease;
   letter-spacing: 2px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e9974+0,22b77e+44,1fc47f+68,7be5be+100 */
+  background: #1e9974; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #1e9974 0%,
+    #22b77e 44%,
+    #1fc47f 68%,
+    #7be5be 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #1e9974 0%,
+    #22b77e 44%,
+    #1fc47f 68%,
+    #7be5be 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1e9974 0%,
+    #22b77e 44%,
+    #1fc47f 68%,
+    #7be5be 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e9974', endColorstr='#7be5be',GradientType=1 ); /* IE6-9 */
 }
 
 button:hover {
