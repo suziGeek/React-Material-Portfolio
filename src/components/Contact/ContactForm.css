@@ -67,8 +67,21 @@ button {
   color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.4s ease;
+  transition: 0.8s ease;
   letter-spacing: 2px;
+
+  background: #1e9974; /* Old browsers */
+}
+
+button:hover {
+  letter-spacing: 4px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.5s ease 0s;
+
+  color: white;
+  text-decoration: none;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e9974+0,22b77e+44,1fc47f+68,7be5be+100 */
   background: #1e9974; /* Old browsers */
   background: -moz-linear-gradient(
@@ -93,12 +106,6 @@ button {
     #7be5be 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e9974', endColorstr='#7be5be',GradientType=1 ); /* IE6-9 */
-}
-
-button:hover {
-  background-color: blue;
-  color: white;
-  text-decoration: none;
 }
 
 hr {
