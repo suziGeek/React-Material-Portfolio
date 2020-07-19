@@ -46,20 +46,6 @@ const HoverCard = () => {
             </a>
           </div>
         </div>
-
-        <div className='card'>
-          <img src='/img/starwars.png' />
-          <div className='info'>
-            <h2>Star Wars API</h2>
-            <p>React</p>
-            <a
-              className='button'
-              href='https://mystifying-clarke-73db29.netlify.com/'
-            >
-              Demo
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
