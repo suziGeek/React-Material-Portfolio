@@ -1,7 +1,54 @@
 import React from "react";
 import "./hovercard.css";
 
+import { makeStyles } from "@material-ui/core/styles";
+import clsx from "clsx";
+import Card from "@material-ui/core/Card";
+import CardHeader from "@material-ui/core/CardHeader";
+import CardMedia from "@material-ui/core/CardMedia";
+import CardContent from "@material-ui/core/CardContent";
+import CardActions from "@material-ui/core/CardActions";
+import Collapse from "@material-ui/core/Collapse";
+import Avatar from "@material-ui/core/Avatar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import { red } from "@material-ui/core/colors";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import ShareIcon from "@material-ui/icons/Share";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 0,
+    paddingTop: "56.25%", // 16:9
+  },
+  expand: {
+    transform: "rotate(0deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: "rotate(180deg)",
+  },
+  avatar: {
+    backgroundColor: red[500],
+  },
+}));
+
 const HoverCard = () => {
+  const classes = useStyles();
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <section className='body-container'>
       <div className='project-title'>
@@ -9,52 +56,116 @@ const HoverCard = () => {
       </div>
       <div className='wrapper'>
         <div className='card'>
-          <img src='/img/drums.png' />
-          <div className='info'>
-            <h2>Drum Machine</h2>
-            <p>HTML5, Flex Box CSS3, and Javascript.</p>
-            <a className='button' href='https://pheedme.netlify.com/'>
-              Demo
-            </a>
-          </div>
-        </div>
-
-        <div className='card'>
-          <img src='/img/movies.jpg' />
-          <div className='info'>
-            <h2>TMDB Movie App</h2>
-            <p> React, React Hooks, FlexBox</p>
-            <a
-              className='button'
-              href='https://eloquent-edison-a1172e.netlify.com/'
-            >
-              Demo
-            </a>
-          </div>
-        </div>
-
-        <div className='card'>
-          <img src='/img/store.png' />
-          <div className='info'>
-            <h2>ECommerce Application</h2>
-            <p> React, Redux, Router, Firebase</p>
-            <a
-              className='button'
-              href='https://eager-almeida-2b0f40.netlify.com/'
-            >
-              Demo
-            </a>
-          </div>
+          <Card className={classes.root}>
+            <CardHeader
+              title='Full Stack Camping App'
+              subheader='C# .Net Core Razor MySQL XML API Consumption.'
+            />
+            <CardMedia
+              className={classes.media}
+              image='img/glamper.png'
+              title='Javascript Drum Machine'
+            />
+            <CardContent>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                Built with React using hooks and Material UI. Firebase for
+                authentication and NoSql Database Backend.
+                <br />
+                <br />
+                <p>
+                  {" "}
+                  <a className='button' href='http://www.glamper.io'>
+                    Demo
+                  </a>
+                </p>
+              </Typography>
+            </CardContent>
+          </Card>
         </div>
         <div className='card'>
-          <img src='/img/store.png' />
-          <div className='info'>
-            <h2>Full Stack Camping Application</h2>
-            <p> C# .Net Core Razor MySQL XML API Consumption</p>
-            <a className='button' href='http://www.glamper.io'>
-              Demo
-            </a>
-          </div>
+          <Card className={classes.root}>
+            <CardHeader
+              title='TMDB Movie App'
+              subheader='React, React Hooks, FlexBox.'
+            />
+            <CardMedia
+              className={classes.media}
+              image='img/movies.jpg'
+              title='Javascript Drum Machine'
+            />
+            <CardContent>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                Built with React using hooks and Material UI. Firebase for
+                authentication and NoSql Database Backend.
+                <br />
+                <br />
+                <p>
+                  {" "}
+                  <a className='button' href='https://pheedme.netlify.com/'>
+                    Demo
+                  </a>
+                </p>
+              </Typography>
+            </CardContent>
+          </Card>
+        </div>
+        // /**material ui complex card**/
+        <div className='card'>
+          <Card className={classes.root}>
+            <CardHeader
+              title='Drum Machine'
+              subheader='HTML5, Flex Box CSS3, and Javascript.'
+            />
+            <CardMedia
+              className={classes.media}
+              image='/img/drums.png'
+              title='Javascript Drum Machine'
+            />
+            <CardContent>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                Built with React using hooks and context for state management.
+                Firebase for authentication and NoSql Database Backend.
+                <br />
+                <br />
+                <p>
+                  {" "}
+                  <a className='button' href='https://pheedme.netlify.com/'>
+                    Demo
+                  </a>
+                </p>
+              </Typography>
+            </CardContent>
+          </Card>
+        </div>
+        <div className='card'>
+          <Card className={classes.root}>
+            <CardHeader
+              title='Full Stack Shopping Site'
+              subheader='React MERN Stack'
+            />
+            <CardMedia
+              className={classes.media}
+              image='/img/store.png'
+              title='ECommerce React Store'
+            />
+            <CardContent>
+              <Typography variant='body2' color='textSecondary' component='p'>
+                Built with React using hooks and context for state management.
+                Firebase for authentication and NoSql Database Backend.
+                <br />
+                <br />
+                <p>
+                  {" "}
+                  <a
+                    className='button'
+                    href='https://eager-almeida-2b0f40.netlify.com/'
+                  >
+                    Demo
+                  </a>
+                </p>
+              </Typography>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
