@@ -39,6 +39,9 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: red[500],
   },
+  MuiPaperElevation1: {
+    boxShadow: "unset",
+  },
 }));
 
 const HoverCard = () => {
@@ -109,7 +112,7 @@ const HoverCard = () => {
             </CardContent>
           </Card>
         </div>
-        // /**material ui complex card**/
+
         <div className='card'>
           <Card className={classes.root}>
             <CardHeader

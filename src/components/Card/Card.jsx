@@ -10,8 +10,8 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345
-  }
+    maxWidth: 345,
+  },
 });
 
 export default function ImgMediaCard() {
@@ -21,27 +21,27 @@ export default function ImgMediaCard() {
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="10em"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          component='img'
+          alt='Contemplative Reptile'
+          height='10em'
+          image='/static/images/cards/contemplative-reptile.jpg'
+          title='Contemplative Reptile'
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant='h5' component='h2'>
             Lizard
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant='body2' color='textSecondary' component='p'>
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size='small' color='primary'>
           Share
         </Button>
-        <Button size="small" color="primary">
+        <Button size='small' color='primary'>
           Learn More
         </Button>
       </CardActions>
