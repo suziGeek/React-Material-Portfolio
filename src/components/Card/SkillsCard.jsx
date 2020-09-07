@@ -42,7 +42,6 @@ const SkillsCard = () => {
             <p>GIT/GITHUB</p>
             <p>Photoshop</p>
             <p> Illustrator</p>
-            <p> InDesign</p>
           </div>
         </div>
       </div>

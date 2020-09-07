@@ -65,9 +65,10 @@ class Components extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Front End Web Developer</h1>
+                  <h1 className={classes.title}>Full Stack Web Developer</h1>
                   <h3 className={classes.subtitle}>
-                    Specializing in Javascript, React, HTML5, CSS3, C#, .NET
+                    Specializing in .Net Core, C#, MySQL, Javascript, React,
+                    HTML5, CSS3.
                   </h3>
                   <h3 className={classes.subtitle}>Based in Cleveland Ohio.</h3>
                 </div>
