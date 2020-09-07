@@ -68,6 +68,9 @@ const HoverCard = () => {
               <a className='button' href='http://www.glamper.io'>
                 Demo
               </a>
+              <a className='button' href='https://github.com/suziGeek/Glamp'>
+                GitHub
+              </a>
             </Typography>
             <br />
             <CardMedia
@@ -90,8 +93,17 @@ const HoverCard = () => {
               subheader='React, React Hooks, FlexBox.'
             />
             <Typography>
-              <a className='button' href='https://pheedme.netlify.com/'>
+              <a
+                className='button'
+                href='https://optimistic-brown-cf1ac7.netlify.app/'
+              >
                 Demo
+              </a>
+              <a
+                className='button'
+                href='https://github.com/suziGeek/Movie-Firebase-Material-TMDB'
+              >
+                GitHub
               </a>
             </Typography>
             <br />
@@ -117,8 +129,14 @@ const HoverCard = () => {
               subheader='HTML5, Flex Box CSS3, and Javascript.'
             />
             <Typography>
-              <a className='button' href='https://pheedme.netlify.com/'>
+              <a className='button' href='https://pheedme.netlify.app/'>
                 Demo
+              </a>
+              <a
+                className='button'
+                href='https://github.com/suziGeek/drum-machine'
+              >
+                GitHub
               </a>
             </Typography>
             <br />
@@ -133,34 +151,6 @@ const HoverCard = () => {
                 stroke and Button clicks to trigger action.
                 <br />
                 <br />
-              </Typography>
-            </CardContent>
-          </Card>
-        </div>
-        <div className='card'>
-          <Card className={classes.root}>
-            <CardHeader
-              title='Full Stack Shopping Site'
-              subheader='React MERN Stack'
-            />
-            <Typography>
-              <a
-                className='button'
-                href='https://eager-almeida-2b0f40.netlify.com/'
-              >
-                Demo
-              </a>
-            </Typography>
-            <br />
-            <CardMedia
-              className={classes.media}
-              image='/img/store.png'
-              title='ECommerce React Store'
-            />
-            <CardContent>
-              <Typography variant='body2' color='textSecondary' component='p'>
-                Built with React using hooks and context for state management.
-                Firebase for authentication and NoSql Database Backend.
               </Typography>
             </CardContent>
           </Card>

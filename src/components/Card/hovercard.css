@@ -39,12 +39,13 @@
 .wrapper {
   display: flex;
   width: 100vw;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .card {
   /* justify-content: space-between; */
   flex-grow: 1;
+  max-width: 345px;
   width: 100vw;
   margin: 1.5em;
   /* position: relative; */
@@ -101,7 +102,7 @@
   position: relative;
 
   z-index: 3;
-  color: white;
+  /* color: white; */
   opacity: 0;
   -webkit-transform: translateY(30px);
   transform: translateY(30px);
@@ -120,7 +121,7 @@
   outline: none;
   border: none;
   border-radius: 3px;
-  background: white;
+  /* background: white; */
   color: black;
   font-weight: bold;
   cursor: pointer;
@@ -128,7 +129,7 @@
 }
 .card .info .button:hover {
   background: dodgerblue;
-  color: white;
+  /* color: white; */
   text-decoration: none;
 }
 
