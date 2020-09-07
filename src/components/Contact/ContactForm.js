@@ -39,7 +39,8 @@ class ContactForm extends React.Component {
           data-netlify-recaptcha='true'
           data-netlify='true'
           onSubmit={this.handleSubmit}
-          name='netlify'
+          name='Contact'
+          netlify
         >
           <h3>Get in touch!</h3>
 
