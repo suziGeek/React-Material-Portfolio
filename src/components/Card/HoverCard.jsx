@@ -68,8 +68,8 @@ const HoverCard = () => {
             />
             <CardContent>
               <Typography variant='body2' color='textSecondary' component='p'>
-                Built with React using hooks and Material UI. Firebase for
-                authentication and NoSql Database Backend.
+                C# .Net Core Razor pages consuming XML API for content. Google
+                Maps API integration. MySQL and SQL backend.
                 <br />
                 <br />
                 <p>
@@ -91,7 +91,7 @@ const HoverCard = () => {
             <CardMedia
               className={classes.media}
               image='img/movies.jpg'
-              title='Javascript Drum Machine'
+              title='TMDB Movie Ap'
             />
             <CardContent>
               <Typography variant='body2' color='textSecondary' component='p'>
@@ -123,8 +123,8 @@ const HoverCard = () => {
             />
             <CardContent>
               <Typography variant='body2' color='textSecondary' component='p'>
-                Built with React using hooks and context for state management.
-                Firebase for authentication and NoSql Database Backend.
+                A fun simple javascript drum machine also using jQuery. Key
+                stroke and Button clicks to trigger action.
                 <br />
                 <br />
                 <p>
