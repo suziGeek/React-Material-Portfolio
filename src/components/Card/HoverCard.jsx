@@ -64,6 +64,12 @@ const HoverCard = () => {
               title='Full Stack Camping App'
               subheader='C# .Net Core Razor MySQL XML API Consumption.'
             />
+            <Typography>
+              <a className='button' href='http://www.glamper.io'>
+                Demo
+              </a>
+            </Typography>
+            <br />
             <CardMedia
               className={classes.media}
               image='img/glamper.png'
@@ -73,14 +79,6 @@ const HoverCard = () => {
               <Typography variant='body2' color='textSecondary' component='p'>
                 C# .Net Core Razor pages consuming XML API for content. Google
                 Maps API integration. MySQL and SQL backend.
-                <br />
-                <br />
-                <p>
-                  {" "}
-                  <a className='button' href='http://www.glamper.io'>
-                    Demo
-                  </a>
-                </p>
               </Typography>
             </CardContent>
           </Card>
@@ -91,23 +89,22 @@ const HoverCard = () => {
               title='TMDB Movie App'
               subheader='React, React Hooks, FlexBox.'
             />
+            <Typography>
+              <a className='button' href='https://pheedme.netlify.com/'>
+                Demo
+              </a>
+            </Typography>
+            <br />
             <CardMedia
               className={classes.media}
               image='img/movies.jpg'
               title='TMDB Movie Ap'
             />
+
             <CardContent>
               <Typography variant='body2' color='textSecondary' component='p'>
                 Built with React using hooks and Material UI. Firebase for
                 authentication and NoSql Database Backend.
-                <br />
-                <br />
-                <p>
-                  {" "}
-                  <a className='button' href='https://pheedme.netlify.com/'>
-                    Demo
-                  </a>
-                </p>
               </Typography>
             </CardContent>
           </Card>
@@ -119,6 +116,12 @@ const HoverCard = () => {
               title='Drum Machine'
               subheader='HTML5, Flex Box CSS3, and Javascript.'
             />
+            <Typography>
+              <a className='button' href='https://pheedme.netlify.com/'>
+                Demo
+              </a>
+            </Typography>
+            <br />
             <CardMedia
               className={classes.media}
               image='/img/drums.png'
@@ -130,12 +133,6 @@ const HoverCard = () => {
                 stroke and Button clicks to trigger action.
                 <br />
                 <br />
-                <p>
-                  {" "}
-                  <a className='button' href='https://pheedme.netlify.com/'>
-                    Demo
-                  </a>
-                </p>
               </Typography>
             </CardContent>
           </Card>
@@ -146,6 +143,15 @@ const HoverCard = () => {
               title='Full Stack Shopping Site'
               subheader='React MERN Stack'
             />
+            <Typography>
+              <a
+                className='button'
+                href='https://eager-almeida-2b0f40.netlify.com/'
+              >
+                Demo
+              </a>
+            </Typography>
+            <br />
             <CardMedia
               className={classes.media}
               image='/img/store.png'
@@ -155,17 +161,6 @@ const HoverCard = () => {
               <Typography variant='body2' color='textSecondary' component='p'>
                 Built with React using hooks and context for state management.
                 Firebase for authentication and NoSql Database Backend.
-                <br />
-                <br />
-                <p>
-                  {" "}
-                  <a
-                    className='button'
-                    href='https://eager-almeida-2b0f40.netlify.com/'
-                  >
-                    Demo
-                  </a>
-                </p>
               </Typography>
             </CardContent>
           </Card>
